@@ -1,0 +1,388 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 30rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/*all nav bar*/
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.logo-image {
+  width: 200px;
+  height: 70px;
+}
+
+
+.call-button {
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin-top: -10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.call-button:hover {
+  background-color: darkred;
+}
+
+
+/*all sidebar*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.sidebar li {
+  width: 100%;
+  margin: 0;
+}
+
+.sidebar a {
+  width: 100%;
+  text-align: left;
+}
+
+
+/*all footer*/
+.site-footer {
+  background-image: url('woodfooter3.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  padding: 150px 0;
+  border-top: 1px solid #444;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  /* Aligns the text on the left and logo on the right */
+  align-items: center;
+  /* Vertically centers the content */
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 0px;
+  /* Adds padding on the sides */
+}
+
+.footer-text {
+  display: flex;
+  font-family: "Bungee Inline";
+  flex-direction: column;
+  color: black;
+  font-size: 60px;
+  /* Stacks the text lines vertically */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /* Adjust line height as needed */
+}
+
+.footer-text p {
+  margin: 5px;
+  /* Removes any extra margin */
+  padding: 0;
+  /* Removes any extra padding */
+}
+
+.footer-logo {
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 5px;
+  mix-blend-mode: multiply;
+}
+
+
+
+.menu-title {
+  text-align: center;
+  color: red;
+  font-family: "Alfa Slab One";
+  font-size: 3em;
+  padding: 30px;
+}
+
+.menu-item-page {
+  padding: 30px;
+}
+
+.menu-item {
+  font-size: 2em;
+  font-family: "Archivo Black Static";
+  font-weight: bold;
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.menu-price {
+  font-family: "Archivo Black Static";
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+}
+
+.menu-description {
+  font-family: "Oswald";
+  font-size: 1.5em;
+  color: #555;
+  padding-bottom: 40px;
+}
+
+.dots {
+  flex-grow: 1;
+  color: black;
+  border-bottom: 3px dotted;
+  margin: 0 10px;
+  height: 32px;
+  overflow: hidden;
+}
+
+p {
+  display: flex;
+  align-items: center;
+
+}
+
+/* menu-columns */
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-menu-item {
+  font-family: "Archivo Black Static";
+  font-size: 1.5em;
+  font-weight: bold;
+  vertical-align: bottom;
+  padding-bottom: 40px;
+  /* Align item text to the bottom */
+}
+
+.column-menu-price {
+  color: red;
+  font-family: "Archivo Black Static";
+  font-size: 1.5em;
+  font-weight: bold;
+  vertical-align: bottom;
+  padding-bottom: 40px;
+
+  /* Align price text to the bottom */
+}
+
+.column-menu-description {
+  font-size: 1.3em;
+  font-family: "Oswald";
+  color: #555;
+  display: block;
+  margin-top: 0px;
+  padding-bottom: 40px;
+  /* Optional: Add space between the price and description */
+}
+
+.column-dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted;
+  margin: 0 10px;
+  height: 1px;
+  position: relative;
+  top: 8px;
+  /* Adjust this value to align the dots with the bottom of the text */
+  overflow: hidden;
+}
+
+
+/* Login Page */
+
+.center-box {
+  width: 300px;
+  height: 600px;
+  background-color: #ffffff1f; /* White background with slight transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  font-size: 18px;
+  color: #333;
+  transform: translate(220%, 4%);
+}
+
+
+.login-box {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: #ffffff04;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transform: translate(196%, 10%);
+}
+
+.login-box h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-box input {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-box button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+.account-link {
+  margin-top: 10px;
+}
+
+/* Register page */
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: translate(140%, 5%);
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Cart page */
+
+.cart-title {
+  text-align: center;
+  font-size: 55px;
+  color: red;
+}

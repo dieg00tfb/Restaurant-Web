@@ -1,0 +1,52 @@
+.site-footer {
+  background-image: url('woodfooter3.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  padding: 150px 0;
+  border-top: 1px solid #444;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  /* Aligns the text on the left and logo on the right */
+  align-items: center;
+  /* Vertically centers the content */
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 0px;
+  /* Adds padding on the sides */
+}
+
+.footer-text {
+  display: flex;
+  font-family: "Bungee Inline";
+  flex-direction: column;
+  color: black;
+  font-size: 60px;
+  /* Stacks the text lines vertically */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /* Adjust line height as needed */
+}
+
+.footer-text p {
+  margin: 5px;
+  /* Removes any extra margin */
+  padding: 0;
+  /* Removes any extra padding */
+}
+
+.footer-logo {
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 5px;
+  mix-blend-mode: multiply;
+}
